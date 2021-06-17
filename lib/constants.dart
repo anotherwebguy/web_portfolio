@@ -41,7 +41,7 @@ final myCommunityLinks = [
 // Tools & Tech
 final myTools = ["Flutter", "Dart", "C++", "C", "Java", "Python"];
 
-final kTools1 = ["HTML", "CSS", "Bootstrap", "JavaScript", "Mysql"];
+final myTools1 = ["HTML", "CSS", "Bootstrap", "JavaScript", "Mysql"];
 
 // services
 final myServicesIcons = [
