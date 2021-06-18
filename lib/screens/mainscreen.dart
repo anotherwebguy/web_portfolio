@@ -104,7 +104,7 @@ class _MainPageState extends State<MainPage> {
           child: ScrollablePositionedList.builder(
             itemScrollController: _itemScrollController,
             itemPositionsListener: _itemPositionListener,
-            itemCount: 8,
+            itemCount: 10,
             itemBuilder: (context, index) {
               return sectionWidget(index);
             },

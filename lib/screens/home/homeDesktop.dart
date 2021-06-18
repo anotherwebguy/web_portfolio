@@ -19,7 +19,7 @@ class HomeDesktop extends StatelessWidget {
         children: [
           Positioned(
             top: width < 1200 ? height * 0.15 : height * 0.1,
-            right: width * 0.01,
+            right: width * 0.05,
             child: Opacity(
               opacity: 0.9,
               child: EntranceFader(
@@ -27,7 +27,7 @@ class HomeDesktop extends StatelessWidget {
                 delay: Duration(seconds: 1),
                 duration: Duration(milliseconds: 800),
                 child: Image.asset(
-                  'assets/images/p2.png',
+                  'assets/images/port.png',
                   height: width < 1200 ? height * 0.8 : height * 0.85,
                 ),
               ),
@@ -94,8 +94,8 @@ class HomeDesktop extends StatelessWidget {
                               fontWeight: FontWeight.w200),
                           text: [
                             " Flutter Developer",
-                            " Technical Writer",
-                            " UI/UX Enthusiast"
+                            " Competitive Coding",
+                            " Sophomore Computer Science Student"
                           ]),
                     ],
                   ),

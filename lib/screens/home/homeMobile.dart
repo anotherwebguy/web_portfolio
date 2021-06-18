@@ -26,7 +26,7 @@ class _HomeMobileState extends State<HomeMobile> {
             right: -width * 0.3,
             child: Opacity(
               opacity: 0.7,
-              child: Image.asset('assets/images/p2.png', height: height * 0.65),
+              child: Image.asset('assets/images/port.png', height: height * 0.65),
             ),
           ),
           Container(
@@ -79,8 +79,8 @@ class _HomeMobileState extends State<HomeMobile> {
                             fontWeight: FontWeight.w200),
                         text: [
                           " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Competitive Coding",
+                          " Sophomore Computer Science Student"
                         ]),
                   ],
                 ),
