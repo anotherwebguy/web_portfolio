@@ -48,16 +48,11 @@ class PortfolioDesktop extends StatelessWidget {
                     projectTitle: myProjectsTitles[index],
                     projectDescription: myProjectsDescriptions[index],
                     projectLink: myProjectsLinks[index],
-                    bottomWidget: index == 1
-                        ? Image.network(
-                            "https://img.icons8.com/material-sharp/384/ffffff/google-play.png",
-                            height: height * 0.04,
-                          )
-                        : Container(),
+                    bottomWidget: Container(),
                   ),
                 );
               },
-              itemCount: 4,
+              itemCount: 9,
             ),
           ),
           SizedBox(

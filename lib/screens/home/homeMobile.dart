@@ -26,7 +26,7 @@ class _HomeMobileState extends State<HomeMobile> {
             right: -width * 0.3,
             child: Opacity(
               opacity: 0.7,
-              child: Image.asset('assets/images/p1.png', height: height * 0.65),
+              child: Image.asset('assets/images/p2.png', height: height * 0.65),
             ),
           ),
           Container(
@@ -55,14 +55,15 @@ class _HomeMobileState extends State<HomeMobile> {
                 Text(
                   "Mohit",
                   style: GoogleFonts.montserrat(
-                      fontSize: height * 0.055,
-                      fontWeight: FontWeight.w100,
-                      letterSpacing: 1.1),
+                      fontSize: height * 0.055, fontWeight: FontWeight.w500),
+                  
                 ),
                 Text(
                   "Singh",
                   style: GoogleFonts.montserrat(
-                      fontSize: height * 0.055, fontWeight: FontWeight.w500),
+                      fontSize: height * 0.055,
+                      fontWeight: FontWeight.w100,
+                      letterSpacing: 1.1),    
                 ),
                 Row(
                   children: [

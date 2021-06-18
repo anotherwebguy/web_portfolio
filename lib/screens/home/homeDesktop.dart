@@ -64,16 +64,17 @@ class HomeDesktop extends StatelessWidget {
                   style: GoogleFonts.montserrat(
                       fontSize:
                           width < 1200 ? height * 0.085 : height * 0.095,
-                      fontWeight: FontWeight.w100,
-                      letterSpacing: 4.0),
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 5.0,),
+                    
                 ),
                 Text(
                   "Singh",
                   style: GoogleFonts.montserrat(
                       fontSize:
                           width < 1200 ? height * 0.085 : height * 0.095,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 5.0),
+                      fontWeight: FontWeight.w100,
+                      letterSpacing: 4.0),
                 ),
                 EntranceFader(
                   offset: Offset(-10, 0),

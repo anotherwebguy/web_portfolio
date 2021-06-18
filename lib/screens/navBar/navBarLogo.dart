@@ -17,7 +17,7 @@ class NavBarLogo extends StatelessWidget {
           ),
           Text(
             "Mohit",
-            style: TextStyle(fontFamily: "Agustina", fontSize: height ?? 20),
+            style: TextStyle(fontFamily: "Agustina", fontSize: height ?? 20,color: Colors.redAccent),
           ),
           Text(
             MediaQuery.of(context).size.width >= 1000 ? " />\t\t" : " />",

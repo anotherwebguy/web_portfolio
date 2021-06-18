@@ -3,9 +3,12 @@ import 'package:myportfolio/animations/entranceFader.dart';
 import 'package:myportfolio/constants.dart';
 import 'package:myportfolio/screens/about/about.dart';
 import 'package:myportfolio/screens/contact/contact.dart';
+import 'package:myportfolio/screens/education/educationdesktop.dart';
+import 'package:myportfolio/screens/experience/experience.dart';
 import 'package:myportfolio/screens/home/home.dart';
 import 'package:myportfolio/screens/navBar/navBarLogo.dart';
 import 'package:myportfolio/screens/portfolio/portfolio.dart';
+import 'package:myportfolio/screens/skills/skills.dart';
 import 'package:myportfolio/widgets/arrowOnTop.dart';
 import 'package:myportfolio/widgets/footer.dart';
 import 'package:universal_html/html.dart' as html;
@@ -30,6 +33,7 @@ class _MainPageState extends State<MainPage> {
     "About",
     "Education",
     "Skills",
+    "Work Experience",
     "Projects",
     "Contact"
   ];
@@ -39,6 +43,7 @@ class _MainPageState extends State<MainPage> {
     Icons.person,
     Icons.school,
     Icons.center_focus_weak_rounded,
+    Icons.work,
     Icons.build,
     Icons.phone,
   ];
@@ -53,20 +58,24 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 1) {
       return About();
     } else if (i == 2) {
-      return About();
-    } else if (i == 3) {
-      return Portfolio();
-    } else if (i == 4) {
-      return Contact();
+      return EducationDesktop();
+    } else if (i == 3){
+      return Skills();
+    } else if (i == 4){
+      return Experience();
     } else if (i == 5) {
+      return Portfolio();
+    } else if (i == 6) {
+      return Contact();
+    } else if (i == 7) {
       return SizedBox(
         height: 40.0,
       );
-    } else if (i == 6) {
+    } else if (i == 8) {
       return ArrowOnTop(
         onPressed: () => _scroll(0),
       );
-    } else if (i == 7) {
+    } else if (i == 9) {
       return Footer();
     } else {
       return Container();
@@ -131,7 +140,7 @@ class _MainPageState extends State<MainPage> {
                 child: ListTile(
                   leading: Icon(
                     icon,
-                    color: kPrimaryColor,
+                    color: Colors.white,
                   ),
                   title: Text(childText),
                 )),
@@ -166,10 +175,12 @@ class _MainPageState extends State<MainPage> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: MaterialButton(
-              hoverColor: kPrimaryColor.withAlpha(150),
+              color: myPrimaryColor,
+              hoverColor: Colors.white.withAlpha(150),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
-                  side: BorderSide(color: kPrimaryColor)),
+                  //side: BorderSide(color: myPrimaryColor)
+                  ),
               onPressed: () {
                 html.window.open(
                     'https://drive.google.com/file/d/1OH9Fd4JTFJg3MwvglCTTiullZUl4GVRy/view?usp=drivesdk',
@@ -205,10 +216,10 @@ class _MainPageState extends State<MainPage> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: MaterialButton(
-                hoverColor: kPrimaryColor.withAlpha(150),
+                hoverColor: myPrimaryColor.withAlpha(150),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5.0),
-                    side: BorderSide(color: kPrimaryColor)),
+                    side: BorderSide(color: myPrimaryColor)),
                 onPressed: () {
                   launchURL(
                       "https://drive.google.com/file/d/1OH9Fd4JTFJg3MwvglCTTiullZUl4GVRy/view?usp=drivesdk");

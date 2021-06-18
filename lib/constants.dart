@@ -8,6 +8,9 @@ const Color kBackgroundColor = Color.fromRGBO(7, 17, 26, 1);
 const Color kDangerColor = Color.fromRGBO(249, 77, 30, 1);
 const Color kCaptionColor = Color.fromRGBO(166, 177, 187, 1);
 
+double getMobileMaxWidth(BuildContext context) =>
+    MediaQuery.of(context).size.width * .8;
+
 // Social Media
 const mySocialIcons = [
   "https://img.icons8.com/metro/308/ffffff/linkedin.png",
