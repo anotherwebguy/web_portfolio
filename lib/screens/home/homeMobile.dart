@@ -23,7 +23,7 @@ class _HomeMobileState extends State<HomeMobile> {
         children: [
           Positioned(
             bottom: 0.0,
-            right: -width * 0.3,
+            right: -width * 0.1,
             child: Opacity(
               opacity: 0.7,
               child: Image.asset('assets/images/port.png', height: height * 0.65),

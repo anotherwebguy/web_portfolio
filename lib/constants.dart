@@ -53,6 +53,34 @@ final myServicesIcons = [
   "assets/images/open.png",
 ];
 
+//certificates
+final myCertificatesBanner = [
+  "assets/images/c1.png",
+  "assets/images/c2.jpg",
+  "assets/images/c3.jpg",
+  "assets/images/c4.jpg",
+];
+
+final myCertificatesTitles = [
+  "GirlScript Summer of Code",
+  "MLH Local Hack Day",
+  "Unscript Rookie's Hackathon",
+  "Swabhav Techlabs",
+];
+
+final myCertificatesDescriptions = [
+  "Girlscript Summer of Code Open Source Program Participation certificate",
+  "Participated in Local Hack Day organized by MLH",
+  "Particpated in Unscript Rookie's Hackathon",
+  "Letter of Recomendation from Swabhav Techlabs",
+];
+
+final myCertificatesLinks = [
+  "https://drive.google.com/file/d/13UXbvj3TBma3Z8TcIWN2fm8BnBC-1t-I/view?usp=sharing",
+  "https://drive.google.com/file/d/1GS1BxvxAK1dgph-gMiHlz2dcEhVAeJTk/view?usp=sharing",
+  "https://drive.google.com/file/d/1kVjHw9kDcs8H0_PFLKFEPLu74aHRCDzF/view?usp=sharing",
+  "https://drive.google.com/file/d/1007vARiZvOasANvNpu-8fZtV1qXgYAc0/view?usp=sharing",
+];
 
 // projects
 final myProjectsBanner = [

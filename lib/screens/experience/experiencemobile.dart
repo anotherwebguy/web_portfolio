@@ -16,7 +16,7 @@ class ExperienceMobile extends StatelessWidget {
         .shimmer();
     var size = MediaQuery.of(context).size;
     return Container(
-      height: MediaQuery.of(context).size.height * 1.5,
+      height: MediaQuery.of(context).size.height * 1.0,
       width: MediaQuery.of(context).size.width - 100,
       child: Stack(
 //         physics: NeverScrollableScrollPhysics(),

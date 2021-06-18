@@ -31,6 +31,9 @@ final List<Education> educationList = [
 ];
 
 class EducationDesktop extends StatelessWidget {
+
+  bool isHover = false;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -128,12 +131,13 @@ class EducationDesktop extends StatelessWidget {
                                 ),
                                 MouseRegion(
                                   cursor: SystemMouseCursors.click,
-                                  child: GestureDetector(
-                                    onTap: () {},
+                                  child: InkWell(
+                                    onTap:()  => launchURL(education.linkName),
                                     child: Text(
                                       education.linkName,
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.blue,
+                                        decoration: TextDecoration.underline,
                                       ),
                                     ),
                                   ),

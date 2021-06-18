@@ -1,6 +1,7 @@
 // ignore: avoid_web_libraries_in_flutter
 import 'package:myportfolio/animations/entranceFader.dart';
 import 'package:myportfolio/constants.dart';
+import 'package:myportfolio/screens/Certificates/certificates.dart';
 import 'package:myportfolio/screens/about/about.dart';
 import 'package:myportfolio/screens/contact/contact.dart';
 import 'package:myportfolio/screens/education/educationdesktop.dart';
@@ -35,6 +36,7 @@ class _MainPageState extends State<MainPage> {
     "Skills",
     "Work Experience",
     "Projects",
+    "Achievements",
     "Contact"
   ];
 
@@ -45,6 +47,7 @@ class _MainPageState extends State<MainPage> {
     Icons.center_focus_weak_rounded,
     Icons.work,
     Icons.build,
+    Icons.emoji_events,
     Icons.phone,
   ];
 
@@ -66,16 +69,18 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 5) {
       return Portfolio();
     } else if (i == 6) {
-      return Contact();
+      return Certificates();
     } else if (i == 7) {
+      return Contact();
+    } else if (i == 8) {
       return SizedBox(
         height: 40.0,
       );
-    } else if (i == 8) {
+    } else if (i == 9) {
       return ArrowOnTop(
         onPressed: () => _scroll(0),
       );
-    } else if (i == 9) {
+    } else if (i == 10) {
       return Footer();
     } else {
       return Container();
@@ -87,13 +92,13 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       extendBodyBehindAppBar: true,
-      appBar: MediaQuery.of(context).size.width > 760
+      appBar: MediaQuery.of(context).size.width > 1000
           ? _appBarTabDesktop()
           : AppBar(
               backgroundColor: Colors.transparent,
               elevation: 0.0,
             ),
-      drawer: MediaQuery.of(context).size.width < 760 ? _appBarMobile() : null,
+      drawer: MediaQuery.of(context).size.width < 1000 ? _appBarMobile() : null,
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -104,7 +109,7 @@ class _MainPageState extends State<MainPage> {
           child: ScrollablePositionedList.builder(
             itemScrollController: _itemScrollController,
             itemPositionsListener: _itemPositionListener,
-            itemCount: 10,
+            itemCount: 11,
             itemBuilder: (context, index) {
               return sectionWidget(index);
             },
@@ -115,7 +120,7 @@ class _MainPageState extends State<MainPage> {
   }
 
   Widget _appBarActions(String childText, int index, IconData icon) {
-    return MediaQuery.of(context).size.width > 760
+    return MediaQuery.of(context).size.width > 1000
         ? EntranceFader(
             offset: Offset(0, -20),
             delay: Duration(seconds: 3),
@@ -137,12 +142,14 @@ class _MainPageState extends State<MainPage> {
             child: MaterialButton(
                 hoverColor: myPrimaryColor,
                 onPressed: () => _scroll(index),
-                child: ListTile(
-                  leading: Icon(
-                    icon,
-                    color: Colors.white,
+                child: Center(
+                  child: ListTile(
+                    leading: Icon(
+                      icon,
+                      color: Colors.white,
+                    ),
+                    title: Text(childText),
                   ),
-                  title: Text(childText),
                 )),
           );
   }
