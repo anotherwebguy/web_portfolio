@@ -208,44 +208,47 @@ class _MainPageState extends State<MainPage> {
 
   Widget _appBarMobile() {
     return Drawer(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 25.0, 0, 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: NavBarLogo(
-                height: 28,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+              child: Padding(
+          padding: const EdgeInsets.fromLTRB(0, 25.0, 0, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: NavBarLogo(
+                  height: 28,
+                ),
               ),
-            ),
-            for (int i = 0; i < _sectionsName.length; i++)
-              _appBarActions(_sectionsName[i], i, _sectionsIcons[i]),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: MaterialButton(
-                hoverColor: myPrimaryColor.withAlpha(150),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0),
-                    side: BorderSide(color: myPrimaryColor)),
-                onPressed: () {
-                  launchURL(
-                      "https://drive.google.com/file/d/1OH9Fd4JTFJg3MwvglCTTiullZUl4GVRy/view?usp=drivesdk");
-                },
-                child: ListTile(
-                  leading: Icon(
-                    Icons.book,
-                    color: Colors.red,
-                  ),
-                  title: Text(
-                    "Resume",
-                    style: GoogleFonts.montserrat(
-                      fontWeight: FontWeight.w200,
+              for (int i = 0; i < _sectionsName.length; i++)
+                _appBarActions(_sectionsName[i], i, _sectionsIcons[i]),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: MaterialButton(
+                  hoverColor: myPrimaryColor.withAlpha(150),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                      side: BorderSide(color: myPrimaryColor)),
+                  onPressed: () {
+                    launchURL(
+                        "https://drive.google.com/file/d/1OH9Fd4JTFJg3MwvglCTTiullZUl4GVRy/view?usp=drivesdk");
+                  },
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.book,
+                      color: Colors.red,
+                    ),
+                    title: Text(
+                      "Resume",
+                      style: GoogleFonts.montserrat(
+                        fontWeight: FontWeight.w200,
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

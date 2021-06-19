@@ -52,6 +52,9 @@ class _HomeMobileState extends State<HomeMobile> {
                 SizedBox(
                   height: height * 0.01,
                 ),
+                Text("I am,",style: GoogleFonts.montserrat(
+                          fontSize: height * 0.025,
+                          fontWeight: FontWeight.w200),),
                 Text(
                   "Mohit",
                   style: GoogleFonts.montserrat(

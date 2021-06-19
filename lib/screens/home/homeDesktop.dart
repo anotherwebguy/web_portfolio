@@ -59,6 +59,9 @@ class HomeDesktop extends StatelessWidget {
                 SizedBox(
                   height: height * 0.04,
                 ),
+                Text("I am,",style: GoogleFonts.montserrat(
+                          fontSize: height * 0.035,
+                          fontWeight: FontWeight.w200),),
                 Text(
                   "Mohit",
                   style: GoogleFonts.montserrat(

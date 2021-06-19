@@ -36,6 +36,7 @@ class PortfolioMobileTab extends StatelessWidget {
                 projectTitle: myProjectsTitles[i],
                 projectDescription: myProjectsDescriptions[i],
                 projectLink: myProjectsLinks[i],
+                backImage: myProjectsBanner[i],
               ),
             ),
             options: CarouselOptions(

@@ -27,12 +27,13 @@ class CertificatesMobile extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           CarouselSlider.builder(
-            itemCount: 9,
+            itemCount: 4,
             itemBuilder: (BuildContext context, int itemIndex, int i) =>
                 Padding(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: CertificatesCard(
                 cardWidth: width < 650 ? width * 0.8 : width * 0.4,
+                backImage: myCertificatesBanner[i],
                 projectTitle: myCertificatesTitles[i],
                 projectDescription: myCertificatesDescriptions[i],
                 projectLink: myCertificatesLinks[i],
