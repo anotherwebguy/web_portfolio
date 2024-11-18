@@ -30,8 +30,6 @@ Before these steps make sure you have '''Flutter 2.0'''
 ![Screenshot (347)](https://user-images.githubusercontent.com/66346161/122630864-b4d65b80-d0e4-11eb-8494-7972c901412f.png)
 ![Screenshot (348)](https://user-images.githubusercontent.com/66346161/122630866-b738b580-d0e4-11eb-87ca-30fccc487b0c.png)
 ![Screenshot (349)](https://user-images.githubusercontent.com/66346161/122630868-b9027900-d0e4-11eb-997c-aac44e2c5ca4.png)
-![Screenshot (350)](https://user-images.githubusercontent.com/66346161/122630870-bbfd6980-d0e4-11eb-9d4a-9f13ccaae969.png)
-![Screenshot (351)](https://user-images.githubusercontent.com/66346161/122630871-be5fc380-d0e4-11eb-9820-8de939eaece1.png)
 ----
 
 ### Mobile Screen Size Compatible
