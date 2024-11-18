@@ -5,8 +5,6 @@
 
 <p align="center">Personal Web Portfolio designed in Flutter and hosted on Firebase 💓.</p>
 
-## Demo URL
-https://myportfolio-158b2.web.app
 
 ## 💻 Requirements
   1.Any Operating System (MacOS, Linux, Windows) <br>
